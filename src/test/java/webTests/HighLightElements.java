@@ -23,7 +23,7 @@ public class HighLightElements {
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions co = new ChromeOptions();
-		co.setBinary("/opt/google/chrome");
+		co.addArguments("--no-sandbox");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 		js = (JavascriptExecutor) driver;
