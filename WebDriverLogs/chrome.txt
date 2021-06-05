@@ -1,0 +1,211 @@
+[1587620664.759][INFO]: Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 14656
+[1587620664.759][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1587620665.968][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1587620665.974][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1587620665.994][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1587620666.003][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\SHAILE~1\AppData\Local\Temp\scoped_dir4748_2040893152\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\SHAILE~1\AppData\Local\Temp\scoped_dir4748_806274232" data:,
+[1587620668.934][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1587620671.016][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "81.0.4044.122",
+      "chrome": {
+         "chromedriverVersion": "81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776})",
+         "userDataDir": "C:\\Users\\SHAILE~1\\AppData\\Local\\Temp\\scoped_dir4748_806274232"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:63767"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "2d9c8d5b74044fd8c7a69bb4a03ab3ba"
+}
+[1587620671.420][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND Navigate {
+   "url": "https://opensource-demo.orangehrmlive.com/"
+}
+[1587620671.420][INFO]: Waiting for pending navigations...
+[1587620671.427][INFO]: Done waiting for pending navigations. Status: ok
+[1587620672.627][INFO]: Waiting for pending navigations...
+[1587620672.741][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620672.880][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.071][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.175][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.276][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.378][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.481][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.607][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.715][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.817][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620673.919][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620674.047][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620674.951][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620675.056][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620675.099][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.099][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE Navigate
+[1587620675.119][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#txtUsername"
+}
+[1587620675.119][INFO]: Waiting for pending navigations...
+[1587620675.123][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.179][INFO]: Waiting for pending navigations...
+[1587620675.181][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.181][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "30da8817-46b5-4052-8ecf-f33b076a732b"
+}
+[1587620675.237][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND TypeElement {
+   "id": "30da8817-46b5-4052-8ecf-f33b076a732b",
+   "text": "Admin",
+   "value": [ "A", "d", "m", "i", "n" ]
+}
+[1587620675.237][INFO]: Waiting for pending navigations...
+[1587620675.239][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.520][INFO]: Waiting for pending navigations...
+[1587620675.525][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.525][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE TypeElement
+[1587620675.532][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#txtPassword"
+}
+[1587620675.532][INFO]: Waiting for pending navigations...
+[1587620675.534][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.558][INFO]: Waiting for pending navigations...
+[1587620675.575][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.575][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "dad52284-f77a-4ab1-851d-90d1f21b277b"
+}
+[1587620675.583][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND TypeElement {
+   "id": "dad52284-f77a-4ab1-851d-90d1f21b277b",
+   "text": "admin123",
+   "value": [ "a", "d", "m", "i", "n", "1", "2", "3" ]
+}
+[1587620675.583][INFO]: Waiting for pending navigations...
+[1587620675.585][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.794][INFO]: Waiting for pending navigations...
+[1587620675.797][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.797][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE TypeElement
+[1587620675.804][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#btnLogin"
+}
+[1587620675.804][INFO]: Waiting for pending navigations...
+[1587620675.806][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.828][INFO]: Waiting for pending navigations...
+[1587620675.835][INFO]: Done waiting for pending navigations. Status: ok
+[1587620675.835][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "b0b17aaf-4e26-4ba9-9bac-4d9d155538e2"
+}
+[1587620675.846][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND ClickElement {
+   "id": "b0b17aaf-4e26-4ba9-9bac-4d9d155538e2"
+}
+[1587620675.846][INFO]: Waiting for pending navigations...
+[1587620675.848][INFO]: Done waiting for pending navigations. Status: ok
+[1587620676.038][INFO]: Waiting for pending navigations...
+[1587620677.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620677.345][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620677.447][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620677.706][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620677.808][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587620677.834][INFO]: Done waiting for pending navigations. Status: ok
+[1587620677.834][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE ClickElement
+[1587620677.854][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] COMMAND GetTitle {
+
+}
+[1587620677.854][INFO]: Waiting for pending navigations...
+[1587620677.858][INFO]: Done waiting for pending navigations. Status: ok
+[1587620677.867][INFO]: Waiting for pending navigations...
+[1587620677.869][INFO]: Done waiting for pending navigations. Status: ok
+[1587620677.869][INFO]: [2d9c8d5b74044fd8c7a69bb4a03ab3ba] RESPONSE GetTitle "OrangeHRM"

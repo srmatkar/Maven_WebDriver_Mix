@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite" parallel="tests" thread-count="2">
+
+	<test name="Tests On multiple browsers" thread-count="5"
+		parallel="classes">
+
+		<classes>
+			<class name="parameterised.ChromeTest" />
+			<class name="parameterised.FireFoxTest" />
+		</classes>
+	</test> <!-- End of Test 1 -->
+
+
+
+	<test name="Tests On just chrome- only one mthd" thread-count="5"
+		parallel="classes">
+		<classes>
+			<class name="parameterised.ChromeTest">
+				<methods>
+					<include name="openTOI"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- End of Test 2 -->
+
+</suite> <!-- End of Suite -->

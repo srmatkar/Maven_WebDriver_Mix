@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParameterisedTestSuite" parallel="tests"
+	thread-count="2">
+
+	<test name="easyHr World Tests in Chrome" thread-count="5"
+		parallel="methods">
+
+		<parameter name="url"
+			value="https://arrkgroup.easyhrworld.com/"></parameter>
+		<parameter name="browser" value="chrome">
+		</parameter>
+
+		<classes>
+			<class name="parameterised.ParameterisedTest" />
+		</classes>
+	</test> <!-- End of Test 1 -->
+
+	<test name="easyHr World Tests in Firefox" parallel="methods"
+		thread-count="5">
+		<parameter name="url"
+			value="https://arrkgroup.easyhrworld.com/"></parameter>
+		<parameter name="browser" value="firefox">
+		</parameter>
+		<classes>
+			<class name="parameterised.ParameterisedTest" />
+		</classes>
+	</test> <!-- End of Test 2 -->
+
+
+</suite> <!-- End of Suite -->

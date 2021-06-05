@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailedTestSuite">
+	<listeners>
+		<listener class-name="analysers.MyAnnotTransformer"></listener>
+	</listeners>
+	<test thread-count="5" name="RetryFailedTests">
+		<classes>
+			<class name="retryLogic.RetryInTestNg2" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
