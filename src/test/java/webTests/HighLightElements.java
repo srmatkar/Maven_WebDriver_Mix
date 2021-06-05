@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,8 @@ public class HighLightElements {
 	@BeforeClass
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
+		ChromeOptions co = new ChromeOptions();
+		co.setBinary("/opt/google/chrome");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 		js = (JavascriptExecutor) driver;
