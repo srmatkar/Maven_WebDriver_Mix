@@ -25,8 +25,9 @@ public class HighLightElements {
 		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--no-sandbox");
-		co.addArguments("--headless");
-		co.addArguments("--disable-dev-shm-usage");
+		co.addArguments("--headless");//!!!should be enabled for Jenkins
+		co.addArguments("--disable-dev-shm-usage");//!!!should be enabled for Jenkins
+		co.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 		js = (JavascriptExecutor) driver;
