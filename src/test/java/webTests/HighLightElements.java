@@ -21,7 +21,8 @@ public class HighLightElements {
 
 	@BeforeClass
 	public void setUp() {
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().clearDriverCache();
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--no-sandbox");
 		driver = new ChromeDriver();
