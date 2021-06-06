@@ -25,6 +25,8 @@ public class HighLightElements {
 		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--no-sandbox");
+		co.addArguments("--headless");
+		co.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 		js = (JavascriptExecutor) driver;
