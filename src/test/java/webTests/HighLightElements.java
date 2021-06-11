@@ -22,7 +22,8 @@ public class HighLightElements {
 	@BeforeClass
 	public void setUp() {
 		//WebDriverManager.chromedriver().clearDriverCache();
-		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+	//	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--no-sandbox");
 		co.addArguments("--headless");//!!!should be enabled for Jenkins

@@ -15,7 +15,7 @@
 				<configuration>
 					<!-- Suite testng xml file to consider for test execution -->
 					<suiteXmlFiles>
-						<suiteXmlFile>maven.xml</suiteXmlFile>
+						<suiteXmlFile>l.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
