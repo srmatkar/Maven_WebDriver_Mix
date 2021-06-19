@@ -1,4 +1,4 @@
-package webTests;
+ package webTests;
 
 import java.util.List;
 
@@ -39,9 +39,9 @@ public class JavaScriptExecutor {
 		js.executeScript("arguments[0].click();", we);		
 		
 	}
-	
+ 	
 	@Test
-	public void javaScriptSendkeys() {
+	 public void javaScriptSendkeys() {
 		js.executeScript("document.getElementByName('emailId')[0].value('srmatkar')");
 	}
 	//document.getElementById()
@@ -50,7 +50,7 @@ public class JavaScriptExecutor {
 	//document.getElementByTagName()
 	
 	
-	@Test(description="Highlight webelement")
+  	@Test(description="Highlight webelement")
 	public void highlight() {
 		WebElement we = null;
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", we);

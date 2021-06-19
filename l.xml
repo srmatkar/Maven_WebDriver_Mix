@@ -4,6 +4,7 @@
 	<test thread-count="5" name="MyLinuxTests">
 		<classes>
 			<class name="testsForCI.PrintGoogle" />
+			<class name="testsForCI.PrintGoogle2" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
