@@ -33,5 +33,24 @@ co.setBinary("/opt/google/chrome/google-chrome");
 		driver.get("https://www.google.com/");
 		System.out.println("Page Title Is >>>> : " + driver.getTitle());
 	}
+	
+	@Test
+	public void getGoogleSearchItemByName() {
+		driver.get("https://google.com");
+		driver.findElement(By.name("q")).sendKeys("indraneel");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		List<WebElement> allRes = driver.findElements(By.xpath("//ul[@role = 'listbox']/li"));
+		System.out.println("ResultSize>>> " + allRes.size());
+		for (WebElement res : allRes) {
+
+			WebElement candidateRes = res.findElement(By.cssSelector("span"));
+			  if(candidateRes.getText().contains("indraneel meaning")) {
+			  
+			  candidateRes.click();
+			  break;
+			  }
+			 
+		}
+
 
 }
