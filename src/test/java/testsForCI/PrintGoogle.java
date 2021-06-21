@@ -17,7 +17,7 @@ public class PrintGoogle {
 	public void setUp() {
 		ChromeOptions co = new ChromeOptions();
 		
-co.setBinary("/etc/alternative/google-chrome");
+co.setBinary("/opt/google/chrome/google-chrome");
 	//	co.addArguments("--headless");
 	//	System.setProperty("webdriver.chrome.driver", "");
 		WebDriverManager.chromedriver().setup();
