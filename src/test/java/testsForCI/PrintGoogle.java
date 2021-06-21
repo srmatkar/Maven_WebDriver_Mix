@@ -18,7 +18,7 @@ public class PrintGoogle {
 		ChromeOptions co = new ChromeOptions();
 		
 co.setBinary("/opt/google/chrome/google-chrome");
-	//	co.addArguments("--headless");
+		co.addArguments("--headless");
 	//	System.setProperty("webdriver.chrome.driver", "");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(co);
